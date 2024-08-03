@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #FEFAE0;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#descricao {
+    text-align: justify;
+    font-size: 1.2em;
+    width: 600px;
+    margin: auto;
+}
+
+#skills {
+    text-align: justify;
+    font-size: 1.2em;
+    width: 600px;
+    margin: 5px auto;
+}
+
+#meus-links {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.link-social {
+    list-style: none;
+    margin-top: 15px;
+    border: 2pt solid black;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    /* transition: font-size 0.3s, border 0.3s, padding 0.3s; */
+    background-color: #FEFAE0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.link-social img {
+    /* margin-right: 10px; */
+    margin-right: 30px;
+    margin-left: 5px;
+    height: 25px;
+}
+
+.link-social:hover {
+    font-size: 1.225em;
+    border: 2.5pt solid black;
+    padding: 9px;
+    background-color: #FDF2C5;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
