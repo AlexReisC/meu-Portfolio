@@ -6,6 +6,9 @@ body {
     font-weight: normal;
     font-style: normal;
     background-color: #FEFAE0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -13,24 +16,16 @@ h1 {
     margin: 30px auto;
 }
 
-#descricao {
+#descricao, #skills {
     text-align: justify;
     font-size: 1.2em;
     width: 600px;
-    margin: auto;
-}
-
-#skills {
-    text-align: justify;
-    font-size: 1.2em;
-    width: 600px;
-    margin: 5px auto;
 }
 
 #meus-links {
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 30px;
     padding: 0;
 }
@@ -41,8 +36,6 @@ h1 {
     padding: 10px;
     width: 200px;
     /* transition: font-size 0.3s, border 0.3s, padding 0.3s; */
-    display: flex;
-    align-items: center;
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -63,12 +56,7 @@ h1 {
 }
 
 @media (max-width: 615px){
-    #descricao {
-        width: 300px;
-        margin: auto;
-    }
-
-    #skills {
+    #descricao, #skills {
         width: 300px;
         margin: auto;
     }
