@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+:root {
+    --cor-fundo: #F9F9F9;
+    --cor-texto: #333333;
+    --cor-botoes: #007B83;
+    --cor-hover: #005F63;
+    --cor-secundaria: #E5E5E5;
+    --cor-aviso: #F4A261;
+}
+
 body {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    background-color: #FEFAE0;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
     display: flex;
     flex-direction: column;
     align-items: center;
