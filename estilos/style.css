@@ -50,6 +50,22 @@ h1 {
     max-width: 400px;
 }
 
+.background {
+    background-color: var(--cor-secundaria);
+    border-radius: 7px;
+    padding: 10px 5px;
+}
+
+.skills {
+    width: 80px;
+    height: 80px;
+}
+
+.skills-big {
+    width: 60px;
+    height: 60px;
+}
+
 #meus-links {
     display: flex;
     flex-direction: row;
