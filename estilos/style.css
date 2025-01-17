@@ -74,15 +74,7 @@ h1 {
 }
 
 .link-social:hover {
-    font-size: 1.225em;
-    border: 2.5pt solid black;
-    padding: 9px;
-    background-color: #fcecaf;
-}
-
-@media (max-width: 615px){
-    #descricao, #skills {
-        width: 300px;
-        margin: auto;
-    }
+    outline: 2.1pt solid #000000;
+    background-color: var(--cor-hover);
+    color: #FFFFFF;
 }
