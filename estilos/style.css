@@ -22,14 +22,32 @@ body {
 }
 
 h1 {
+    margin: 30px 0px;
     text-align: center;
-    margin: 30px auto;
 }
 
-#descricao, #skills {
+.titulo-secundario {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#foto-perfil {
+    max-width: 220px;
+    max-height: 220px;    
+    border-radius: 5cm;
+}
+
+#descricao {
     text-align: justify;
     font-size: 1.2em;
-    width: 600px;
+    max-width: 400px;
 }
 
 #meus-links {
