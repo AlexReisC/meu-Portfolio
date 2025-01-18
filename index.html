@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Portfolio's</title>
+    <title>Alex's Personal Site</title>
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
@@ -40,10 +40,33 @@
         </div>
 
         <h2 class="titulo-secundario">Projetos</h2>
-        <div class="background">
-            <a href="https://github.com/AlexReisC/Almossar">Almossar: bot de Telegram</a>
-            <a href="https://github.com/AlexReisC/Todo-in-Spring-Boot">Todo list com Spring Boot</a>
+        <section id="projetos">
+            <div class="card-projeto">
+                <h3>Almossar - bot de Telegram</h3>
+                <img src="imagens/almossar.png" alt="Print do bot no Telegram" class="imagem-projeto">
+                <ul>
+                    <li><p>Envio automatico do cardápio do RU da UFCA. Ele realiza o download do PDF diretamente do site da instituição, processa os dados, e envia o cardápio para os usuários cadastrados em horários programados.</p></li>
+                    <li><strong>Tecnologias:</strong> Java, PostgreSQL, Oracle Cloud</li>
+                </ul>
+                <div class="link-projeto">
+                    <a href="https://github.com/AlexReisC/Almossar" target="_blank">
+                        Ver no Github
+                        <img src="imagens/github-142-svgrepo-com.svg" alt="Logo do Github">
+                    </a>
+                    <a href="https://t.me/cardapioUFCA_bot" target="_blank">
+                        Ver no Telegram
+                        <img src="imagens/telegram.svg" alt="Logo do Telegram">
+                    </a>
+                </div>
         </div>
+
+            <div class="card-projeto">
+                <a href="https://github.com/AlexReisC/Todo-in-Spring-Boot" target="_blank">
+                    Ver no Github
+                    <img src="imagens/github-142-svgrepo-com.svg" alt="Logo do Github">
+                </a>
+            </div>
+        </section>
 
         <h2 class="titulo-secundario">Meus Links</h2>
         <nav id="meus-links">
