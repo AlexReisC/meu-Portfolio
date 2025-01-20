@@ -174,3 +174,75 @@ footer a {
 footer p {
     display: inline;
 }
+
+@media (max-width: 675px) {
+    #sobre-mim {
+        margin-top: 5px;
+        max-width: 360px;
+    }
+
+    .apresentacao {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #skills-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .skills {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skills-big {
+        width: 60px;
+        height: 60px;
+    }
+
+    #meus-links {
+        gap: 10px;
+    }
+
+    .link-social {
+        width: 130px;
+    }
+}
+
+@media (max-width: 620px) {
+    #projetos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 555px){
+    #meus-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .link-social {
+        width: 150px;
+    }
+}
+
+@media (max-width: 375px) {
+    #sobre-mim {
+        max-width: 330px;
+    }
+
+    .card-projeto {
+        width: 370px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
