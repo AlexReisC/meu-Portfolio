@@ -27,7 +27,7 @@ h1 {
 }
 
 .titulo-secundario {
-    margin: 15px auto 10px;
+    margin: 20px auto 10px;
     text-align: center;
 }
 
@@ -71,6 +71,7 @@ h1 {
 #projetos {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .card-projeto {
@@ -80,6 +81,10 @@ h1 {
     text-align: justify;
     padding: 7px;
     border-radius: 10px;
+}
+
+.card-projeto h3 {
+    margin-bottom: 5px;
 }
 
 .imagem-projeto {
