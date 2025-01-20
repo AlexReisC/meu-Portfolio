@@ -70,6 +70,7 @@ h1 {
 
 #projetos {
     display: flex;
+    justify-content: center;
 }
 
 .card-projeto {
@@ -77,8 +78,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    /* background-color: var(--cor-secundaria); */
-    margin-right: 10px;
     padding: 7px;
     border-radius: 10px;
 }
@@ -95,14 +94,14 @@ h1 {
 }
 
 .link-projeto {
-    display: inline;
+    display: flex;
     margin-top: 5px;
+    gap: 10px;
 }
 
 .card-projeto a {
     color: var(--cor-texto);
     font-weight: bold;
-    margin-right: 5px;
 }
 
 .card-projeto a:hover {
