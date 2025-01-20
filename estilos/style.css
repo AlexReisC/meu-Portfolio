@@ -186,6 +186,10 @@ footer p {
         max-width: 360px;
     }
 
+    #sobre-mim h2 {
+        text-align: center;
+    }
+
     .apresentacao {
         margin-top: 10px;
         flex-direction: column;
