@@ -113,6 +113,19 @@ h1 {
     margin-bottom: 5px;
 }
 
+.api-demo {
+    background-color: var(--cor-secundaria);
+    padding: 15px;
+    border-radius: 5px;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+.api-demo code {
+    background-color: #ddd;
+    padding: 2px 5px;
+}
+
 #meus-links {
     display: flex;
     flex-direction: row;
