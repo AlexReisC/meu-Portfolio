@@ -1,118 +1,387 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alex — Backend Developer especializado em Java, Spring Boot e arquiteturas distribuídas." />
+    <meta name="author" content="Alex" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex's Personal Site</title>
-    <link rel="stylesheet" href="estilos/reset.css">
+    <!-- Open Graph (LinkedIn / redes sociais) -->
+    <meta property="og:title" content="Alex | Backend Developer" />
+    <meta property="og:description" content="Backend Developer · Java · Spring Boot · Sistemas distribuídos" />
+    <meta property="og:type" content="website" />
+
+    <title>Alex | Backend Developer</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Devicons (ícones de tecnologia) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-</head>
 
-<body>
-    <h1>Alex, Desenvolvedor Backend</h1>
+    <script src="scrpit.js"></script>
+  </head>
+
+  <body>
+
+    <!-- ========================
+         NAVBAR
+    ========================= -->
+    <header class="navbar" role="banner">
+      <nav class="nav-container" aria-label="Navegação principal">
+        <a href="#hero" class="nav-logo" aria-label="Início">
+          <span class="logo-prefix">~/</span>alex
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#about">sobre</a></li>
+          <li><a href="#stack">stack</a></li>
+          <li><a href="#projects">projetos</a></li>
+          <li><a href="#contact" class="nav-cta">contato</a></li>
+        </ul>
+
+        <!-- Hamburguer (mobile) -->
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+
     <main>
-        
-        <div class="apresentacao">
-            <img id="foto-perfil" src="imagens/my-notion-face-portrait.png" alt="Minha caricatura feita no Notion">
-            
-            <div id="sobre-mim">
-                <h2>Sobre mim</h2>
-                <p id="descricao">
-                    Olá eu me chamo Alex, sou um universitário de Ciência da Computação, estou focado no Desenvolvimento Backend com Java e Spring Boot. Confira abaixo meus projetos e conhecimentos.
+
+      <!-- ========================
+           HERO
+      ========================= -->
+      <section id="hero" class="section-hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+
+          <!-- Prompt de terminal -->
+          <p class="terminal-prompt" aria-hidden="true">
+            <span class="prompt-user">alex</span><span class="prompt-at">@</span><span class="prompt-host">portfolio</span><span class="prompt-sep">:~$</span>
+            <span class="prompt-cmd">whoami</span>
+          </p>
+
+          <h1 id="hero-title" class="hero-title">
+            Backend<br />
+            <span class="hero-accent typing-target">Developer.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Java · Spring Boot · Sistemas Distribuídos
+          </p>
+
+          <p class="hero-description">
+            Construo APIs robustas, escaláveis e bem documentadas.<br />
+            Apaixonado por arquitetura de software e boas práticas.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">ver projetos</a>
+            <a href="#contact" class="btn btn-ghost">entrar em contato</a>
+          </div>
+
+        </div>
+
+        <!-- Decoração: grid de fundo -->
+        <div class="hero-bg-grid" aria-hidden="true"></div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+          <span class="scroll-line"></span>
+        </div>
+      </section>
+
+
+      <!-- ========================
+           SOBRE MIM
+      ========================= -->
+      <section id="about" class="section section-about" aria-labelledby="about-title">
+        <div class="container">
+
+          <div class="section-label" aria-hidden="true">// 01. sobre mim</div>
+          <h2 id="about-title" class="section-title">Quem sou eu</h2>
+
+          <div class="about-grid">
+            <!-- Texto principal -->
+            <div class="about-text">
+              <p>
+                Sou <strong>Alex</strong>, desenvolvedor back-end com experiência em construir
+                soluções robustas usando <strong>Java</strong> e <strong>Spring Boot</strong>.
+                Atualmente trabalho na <strong>Calang.io</strong> e curso Ciência da Computação
+                na <strong>UFCA</strong>, em Juazeiro do Norte, CE.
+              </p>
+              <p>
+                Tenho foco em arquiteturas distribuídas, boas práticas de engenharia de software
+                e segurança de APIs. Estou em busca de uma oportunidade como
+                <strong>Desenvolvedor Java Júnior</strong> onde possa crescer e contribuir
+                com times de alta performance.
+              </p>
+            </div>
+
+            <!-- Card de fatos rápidos -->
+            <aside class="about-facts" aria-label="Informações rápidas">
+              <ul role="list">
+                <li>
+                  <span class="fact-key">localização</span>
+                  <span class="fact-value">Juazeiro do Norte, CE — Brasil</span>
+                </li>
+                <li>
+                  <span class="fact-key">formação</span>
+                  <span class="fact-value">Ciência da Computação · UFCA</span>
+                </li>
+                <li>
+                  <span class="fact-key">empresa atual</span>
+                  <span class="fact-value">Calang.io</span>
+                </li>
+                <li>
+                  <span class="fact-key">foco</span>
+                  <span class="fact-value">Java · Back-end · Arquitetura</span>
+                </li>
+                <li>
+                  <span class="fact-key">disponível para</span>
+                  <span class="fact-value">Oportunidades Jr. · CLT / PJ</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ========================
+           STACK / HABILIDADES
+      ========================= -->
+      <section id="stack" class="section section-stack" aria-labelledby="stack-title">
+        <div class="container">
+
+          <div class="section-label" aria-hidden="true">// 02. stack</div>
+          <h2 id="stack-title" class="section-title">Tecnologias</h2>
+
+          <!-- Grupo: Backend -->
+          <div class="stack-group">
+            <h3 class="stack-group-title">Backend</h3>
+            <ul class="stack-grid" role="list">
+              <li class="stack-item">
+                <i class="devicon-java-plain" aria-hidden="true"></i>
+                <span>Java</span>
+              </li>
+              <li class="stack-item">
+                <i class="devicon-spring-plain" aria-hidden="true"></i>
+                <span>Spring Boot</span>
+              </li>
+              <li class="stack-item">
+                <i class="devicon-php-plain" aria-hidden="true"></i>
+                <span>PHP</span>
+              </li>
+              <li class="stack-item">
+                <i class="devicon-nodejs-plain" aria-hidden="true"></i>
+                <span>Node.js</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Grupo: Banco de Dados -->
+          <div class="stack-group">
+            <h3 class="stack-group-title">Banco de Dados</h3>
+            <ul class="stack-grid" role="list">
+              <li class="stack-item">
+                <i class="devicon-postgresql-plain" aria-hidden="true"></i>
+                <span>PostgreSQL</span>
+              </li>
+              <li class="stack-item">
+                <i class="devicon-mysql-plain" aria-hidden="true"></i>
+                <span>MySQL</span>
+              </li>
+              <li class="stack-item">
+                <i class="devicon-mongodb-plain" aria-hidden="true"></i>
+                <span>MongoDB</span>
+              </li>
+              <li class="stack-item">
+                <i class="devicon-redis-plain" aria-hidden="true"></i>
+                <span>Redis</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Grupo: Infra & DevOps -->
+          <div class="stack-group">
+            <h3 class="stack-group-title">Infra & DevOps</h3>
+            <ul class="stack-grid" role="list">
+              <li class="stack-item">
+                <i class="devicon-docker-plain" aria-hidden="true"></i>
+                <span>Docker</span>
+              </li>
+              <li class="stack-item">
+                <i class="devicon-oracle-plain" aria-hidden="true"></i>
+                <span>Oracle Cloud</span>
+              </li>
+              <li class="stack-item">
+                <i class="devicon-rabbitmq-plain" aria-hidden="true"></i>
+                <span>RabbitMQ</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================
+
+           PROJETOS
+      ========================= -->
+      <section id="projects" class="section section-projects" aria-labelledby="projects-title">
+        <div class="container">
+
+          <div class="section-label" aria-hidden="true">// 03. projetos</div>
+          <h2 id="projects-title" class="section-title">Projetos em destaque</h2>
+
+          <div class="projects-grid">
+
+            <!-- Projeto 1 (placeholder — substituir pelos seus) -->
+            <article class="project-card" aria-labelledby="project-1-title">
+              <header class="project-card-header">
+                <div class="project-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/AlexReisC/real-time-chat" target="_blank" rel="noopener noreferrer" aria-label="Ver código no GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </header>
+
+              <div class="project-body">
+                <h3 id="project-1-title" class="project-title">Real Time Chat</h3>
+                <p class="project-description">
+                  Um sistema de chat em tempo real com suporte a salas de chat públicas e mensagens privadas.
                 </p>
-            </div>
-        </div>
+                <p class="project-metric">
+                  ↗ Reduziu X% das chamadas ao banco de dados
+                </p>
+              </div>
 
-        <h2 class="titulo-secundario">Conhecimentos</h2>
-        <div id="skills-container">
-            <img src="imagens/programming-svgs/java.svg" alt="Logo do Java" class="skills">
-            <img src="imagens/programming-svgs/spring.svg" alt="Logo do Spring" class="skills-big">
-            <img src="imagens/programming-svgs/python.svg" alt="Logo do Python" class="skills-big">
-            <img src="imagens/programming-svgs/javascript.svg" alt="Logo do JavaScript" class="skills-big">
-            <img src="imagens/programming-svgs/html.svg" alt="Logo do HTML5" class="skills">
-            <img src="imagens/programming-svgs/css.svg" alt="Logo do CSS3" class="skills">
-            <img src="imagens/programming-svgs/postgresql.svg" alt="Logo do PostgreSQL" class="skills-big">
-            <img src="imagens/programming-svgs/mysql.svg" alt="Logo do MySQL" class="skills">
-            <img src="imagens/programming-svgs/git.svg" alt="Logo do Git" class="skills">
-        </div>
-
-        <h2 class="titulo-secundario">Projetos</h2>
-        <section id="projetos">
-            <div class="card-projeto">
-                <h3>Cardapio UFCA - bot</h3>
-                <img src="imagens/almossar.png" alt="Print do bot no Telegram" class="imagem-projeto">
-                <ul>
-                    <li><p>Envio automatico do cardápio do RU da UFCA. Ele realiza o download do PDF diretamente do site da instituição, processa os dados, e envia o cardápio para os usuários cadastrados em horários programados.</p></li>
-                    <li><strong>Tecnologias:</strong> Java, PostgreSQL, Oracle Cloud</li>
+              <footer class="project-card-footer">
+                <ul class="project-tags" role="list" aria-label="Tecnologias usadas">
+                  <li>Spring Boot</li>
+                  <li>Microsserviços</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Redis</li>
+                  <li>RabbitMQ</li>
+                  <li>Docker</li>
+                  <li>React</li>
                 </ul>
-                <div class="link-projeto">
-                    <a href="https://github.com/AlexReisC/Almossar" target="_blank">
-                        Ver no Github
-                        <img src="imagens/github-142-svgrepo-com.svg" alt="Logo do Github">
-                    </a>
-                    <a href="https://t.me/cardapioUFCA_bot" target="_blank">
-                        Ver no Telegram
-                        <img src="imagens/telegram.svg" alt="Logo do Telegram">
-                    </a>
-                </div>
-            </div>
-            
-            <div class="card-projeto">
-                <h3>Todo list com Spring Boot</h3>
-                <div class="api-demo">
-                    <p><strong>Endpoint:</strong> <code>/todo</code></p>
-                    <p><strong>Método:</strong> <code>POST</code></p>
-                    <p><strong>Body:</strong></p>
-                    <pre>
-{
-    "title": "task title",
-    "description": "task description",
-    "completed": false,
-    "dueDate": "2024-12-31"
-}
-                    </pre>
-                </div>
-                <ul>
-                    <li><p>Uma API REST para gerenciar tarefas. Permite criar, ler, atualizar e deletar tarefas.</p></li>
-                    <li><strong>Tecnologias</strong>: Spring Web, Spring Data Jpa, Validation, PostgreSQL</li>
-                </ul>
-                <div class="link-projeto">
-                    <a href="https://github.com/AlexReisC/Todo-in-Spring-Boot" target="_blank">
-                        Ver no Github
-                        <img src="imagens/github-142-svgrepo-com.svg" alt="Logo do Github">
-                    </a>
-                </div>
-            </div>
-        </section>
+              </footer>
+            </article>
 
-        <h2 class="titulo-secundario">Meus Links</h2>
-        <nav id="meus-links">
-            <a class="link-social" href="https://github.com/AlexReisC" target="_blank">
-                <img src="imagens/github-142-svgrepo-com.svg" alt="github logo">
-                Github
+            <!-- Projeto 2 -->
+            <article class="project-card" aria-labelledby="project-2-title">
+              <header class="project-card-header">
+                <div class="project-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código no GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </header>
+
+              <div class="project-body">
+                <h3 id="project-2-title" class="project-title">Bot Telegram</h3>
+                <p class="project-description">
+                  Bot para Telegram que envia automaticamente o cardápio do RU da UFCA para os usuários.
+                </p>
+                <p class="project-metric">
+                  ↗ +300 usuários ativos
+                </p>
+              </div>
+
+              <footer class="project-card-footer">
+                <ul class="project-tags" role="list" aria-label="Tecnologias usadas">
+                  <li>Java</li>
+                  <li>PostgreSQL</li>
+                  <li>Oracle Cloud</li>
+                </ul>
+              </footer>
+            </article>
+
+            <!-- Card: "ver mais no GitHub" -->
+            <a href="https://github.com/AlexReisC" target="_blank" rel="noopener noreferrer" class="project-card project-card-more" aria-label="Ver mais projetos no GitHub">
+                <span>ver mais no</span>
+              <strong>GitHub →</strong>
             </a>
-            <a class="link-social" href="https://linkedin.com/in/alex-reis-cavalcante" target="_blank">
-                <img src="imagens/linkedin-svgrepo-com (2).svg" alt="linkedin logo">
-                Linkedin
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ========================
+           CONTATO / LINKS
+      ========================= -->
+      <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+        <div class="container container--narrow">
+
+          <div class="section-label" aria-hidden="true">// 04. contato</div>
+          <h2 id="contact-title" class="section-title">Vamos conversar?</h2>
+
+          <p class="contact-description">
+            Estou aberto a oportunidades como <strong>Desenvolvedor Java Júnior</strong>.
+            Se você tem uma vaga ou quer trocar uma ideia, me manda uma mensagem.
+          </p>
+
+          <a href="mailto:reisc2018@gmail.com" class="btn btn-primary btn-large">
+            reisc2018@gmail.com
+          </a>
+
+          <!-- Links sociais -->
+          <nav class="social-links" aria-label="Links sociais">
+            <a href="https://github.com/AlexReisC" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
             </a>
-            <a class="link-social" href="https://dev.to/alexreis" target="_blank">
-                <img src="imagens/devlogo-pwa-128.png" alt="dev.to logo">
-                Dev.to
+            <a href="https://linkedin.com/in/alex-reis-cavalcante" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
             </a>
-            <a class="link-social" href="Alex-Reis-Curriculo.pdf" download="Alex-Reis-Curriculo.pdf">
-                <img src="imagens/download-svgrepo-com(1).svg" alt="Meu curriculo">
-                Curriculo
-            </a>
-        </nav>
-        
+          </nav>
+
+        </div>
+      </section>
+
     </main>
 
-    <footer>
-        <a href="http://github.com/AlexReisC/meu-Portfolio" target="_blank"><u>Código fonte aqui!</u></a>
-        <p>Desenvolvido por Alex :)</p>
-    </footer>
-</body>
 
+    <!-- ========================
+         FOOTER
+    ========================= -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>
+          <span aria-hidden="true">// </span>
+          Desenvolvido por <strong>Alex</strong> · <span id="footer-year"></span>
+        </p>
+      </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+  </body>
 </html>
